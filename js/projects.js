@@ -8,7 +8,7 @@ const projects = [
     },
     {
         title: "IDK (I Do Know)",
-        description: "A web app that uses real-time transcription of coversation so you will <i>always</i> know the correct answer in an interview.",
+        description: "A web app that uses real-time transcription of a conversation so you will <i>always</i> know the correct answer in an interview.",
         technologies: ["AssemblyAI", "ChatGPT", "NextJS"],
         imageUrl: "images/idk-logo.png",
         url: "https://idoknow.info"
