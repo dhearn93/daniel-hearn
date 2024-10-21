@@ -58,6 +58,16 @@ const blogPosts = [
         "With any luck, I’ll get the IDK app up on the domain for public testing before the end of the week, and I’ll add more slides to the Conscious Effort Project page as well.\n" +
         "I’ve agonized over many of the details for over a year, so I would be happy to get feedback. -Daniel",
         imageUrl: "images/blog-image-3.jpg"
+
+    // {
+    //     title: "New Project Announcement",
+    //     date: "2024-10-27",
+    //     summary: "Exciting news about a new project in the works. ",
+    //     content: "I'm thrilled to announce that I've started working on a new project that combines AI and environmental sustainability. " +
+    //     "The project aims to develop an AI system that can analyze and provide insights on environmental data, helping us make more informed decisions about our planet's future. " +
+    //     "Stay tuned for more updates as the project progresses. - Daniel",
+    //     imageUrl: "images/blog-image-4.jpg"
+    // },
     },
 ];
 
