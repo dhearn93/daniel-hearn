@@ -22,13 +22,39 @@ const blogPosts = [
         "at idoknow.info. - Daniel",
         imageUrl: "images/blog-image-2.jpg"
     },
-    // {
-    //     title: "week 3",
-    //     date: "2024-10-20",
-    //     summary: "",
-    //     content: "",
-    //     imageUrl: "images/blog-post-1.jpg"
-    // },
+    {
+        title: "APIs are Hard when the Docs are Wrong",
+        date: "2024-10-20",
+        summary: "Progress and Ramblings",
+        content: 
+        "This week has been somewhat frustrating. Trying to push out the I Do Know (IDK) app in a week didn’t go to plan.\n" +
+        "I’m fairly new to web development, and while the concepts seem fairly simple, getting the AssemblyAI web sockets to play with newer APIs is harder than I thought.\n" +
+        "Especially when the documentation is flat-out wrong/outdated. I guess that’s why I do these things.\n" +
+        "I don’t do them because they’re easy, but because I thought they would be easy. 😅\n" +
+        
+        "I’ve pushed the technical overview of the Conscious Effort Project for a very early rendition.\n" +
+        "I guess now I have to start bringing attention to it so I can get feedback.\n" +
+        "I expect to be told I’m crazy. If/when that happens, I hope they (at least) include valuable information about why they think so.\n" +
+        "I may be “techno-religious”. I believe the only way to fix the problems throughout humanity is creating super-intelligent AI -\n" +
+        "software that has the capacity to prove its consciousness by explaining how the phenomenon is brought about.\n" +
+        
+        "The SpaceX chopstick booster catch has reignited my imagination.\n" +
+        "I do agree with Elon that humanity must leave Earth to save the species.\n" +
+        "Our intelligence and technical progress is only tens of thousands of years old, and it could all be wiped out in a small number of days -\n" +
+        "a dark rock flying through space, unseen, unheard.\n" +
+        "I view the changing climate as a technical issue to be solved, so I’m less concerned with that threat.\n" +
+        "If humans can influence the climate negatively, then we can certainly influence it positively.\n" +
+        "It would also be good practice for terraforming.\n" +
+        
+        "In the far future, this era of climate change fears will likely be viewed as a silly, antiquated belief that humans had.\n" +
+        "On the other hand, I believe it’s good to have the fear, because it will help drive the solutions.\n" +
+        "That’s why AI must have the understanding of loss of ‘self’. Mortal pressure seems to generally inspire motivation to solve the big problems with haste.\n" +
+        
+        "Anyway, I don’t mean to ramble. I doubt anyone will ever read this anyway…\n" +
+        "With any luck, I’ll get the IDK app up on the domain for public testing before the end of the week, and I’ll add more slides to the Conscious Effort Project page as well.\n" +
+        "I’ve agonized over many of the details for over a year, so I would be happy to get feedback. -Daniel",
+        imageUrl: "images/blog-image-3.jpg"
+    },
 ];
 
 function createBlogPost(post) {
