@@ -96,6 +96,13 @@ const blogPosts = [
         "during the adjustment period. Being a father is tough but I wouldn't trade it for anything in the world. After all, children are the future. -Daniel",
         imageUrl: "images/blog-image-4.jpg"
     },
+    // {
+    //     title: "The Future of AI",
+    //     date: "2024-11-03",
+    //     summary: "A look into the future of AI",
+    //     content: "The future of AI is exciting. We are on the cusp of a new era of intelligence that will change the world as we know it.",
+    //     imageUrl: "images/blog-image-5.jpg"
+    // }
 ];
 
 function createBlogPost(post) {

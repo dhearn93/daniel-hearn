@@ -7,8 +7,8 @@ const projects = [
         url: "https://consciouseffort.dev"
     },
     {
-        title: "IDK (I Do Know)",
-        description: "A web app that uses real-time transcription of a conversation so you will <i>always</i> know the correct answer in an interview.",
+        title: "IDK (Coming Soon)",
+        description: "I Do Know (IDK) is a web app that uses real-time transcription of a conversation so you will <i>always</i> know the correct answer in an interview.",
         technologies: ["AssemblyAI", "ChatGPT", "NextJS"],
         imageUrl: "images/idk-logo.png",
         url: "https://idoknow.info"
@@ -16,7 +16,7 @@ const projects = [
     {
         title: "vent.zone",
         description: "A simple and anonymous way to vent about anything.",
-        technologies: ["NextJS", "TailwindCSS", "Supabase"],
+        technologies: ["NextJS", "Supabase"],
         imageUrl: "images/ventzone.png",
         url: "https://vent.zone"
     }
