@@ -126,7 +126,7 @@ const blogPosts = [
         "<br>" +
         "<br>" +
         "I really want to give my kids a special Christmas, so I'm trying my hand at freelance software development to make some extra money. It seems like it'll be a pain to get my foot through the door on the " +
-        "Upwork platform, but hopefully, I can find some cool AI projects to work on. If you're reading this and you need any AI or software-related work done, you can click here " +
+        "Upwork platform, but hopefully, I can find some cool AI projects to work on. If you're reading this and you need any AI or software-related work done, you can <a href='https://www.upwork.com/freelancers/danielhearn'>click here</a> " +
         "to waive the client fee on Upwork. (Upwork link) I can do pretty much anything, and if I don't know it, I'll learn it.\n" +
         "<br>" +
         "<br>" +
