@@ -96,14 +96,54 @@ const blogPosts = [
         "during the adjustment period. Being a father is tough but I wouldn't trade it for anything in the world. After all, children are the future. -Daniel",
         imageUrl: "images/blog-image-4.jpg"
     },
+    {
+        title: "Time, Progress, and Anticipation",
+        date: "2024-11-03",
+        summary: "Thoughts on consciousness, project updates, and life changes ahead",
+        content: 
+        "I strongly believe that human consciousness arises from the depth of our temporal perception, forward and back. I've written several dozen pages of speculation on the phenomena " +
+        "known as consciousness based on various cognitive science concepts. All of my pondering comes back to the same conclusion that consciousness is derived from a latent 'sense' " +
+        "of time. Like a dog's highly tuned hearing ability, we have high temporal awareness. The human cognitive model knows what it is because it strongly knows what it was, what " +
+        "it currently is, and what it could be given a set of circumstances. It knows that it can manipulate states in the present to alter the future based on experience with the " +
+        "past. Agriculture is the best example of this deeper temporal awareness. Humans had to understand that plants grow in this pattern over time, and if they caused more to grow " +
+        "now, the future would be secure when the cycle repeats. Many animals are also conscious in this way, but humans have a distinct sense of the passage of time.\n" +
+        "<br>" +
+        "<br>" +
+        "I feel proud of myself this week. I made significant progress on the I Do Know project. It's actually somewhat functional now, despite the out-of-date documentation on the " +
+        "transcription API. I still have quite a lot to do to make it into an MVP, but now that it's functional, the rest is mostly aesthetic and UX refinement. I'm considering " +
+        "implementing a trial credits system for users, or maybe a freemium model. For now, I'm going to keep it free until I work out most of the bugs. It's very unfinished right " +
+        "now, but you can check it out at idoknow.info.\n" +
+        "<br>" +
+        "<br>" +
+        "CrewAI (an agentic LLM framework) has released significant updates over the last few weeks, so I've been having fun trying out different ideas. When it comes to these agent " +
+        "frameworks, I think their value lies in being able to use different models for different tasks - especially with local models. Google's (yeah, I know) Gemma 2 is very underrated.\n" +
+        "<br>" +
+        "<br>" +
+        "I might apply to Y-Combinator with the Conscious Effort project. I seriously doubt I would be accepted, but it's worth a shot. My lack of a high-end education, coupled with " +
+        "not having a co-founder (yet), is a valid concern. I probably wouldn't invest in the business at this stage either, so I can definitely understand why it would be a \"no\". " +
+        "If you're reading this as a prospective co-founder: Hi, I would love to have you as a teammate to fix the world. :) My mother always told me not to worry about " +
+        "all the problems in the world - that there's nothing I can do about it anyway. I'm going to prove her wrong.\n" +
+        "<br>" +
+        "<br>" +
+        "I really want to give my kids a special Christmas, so I'm trying my hand at freelance software development to make some extra money. It seems like it'll be a pain to get my foot through the door on the " +
+        "Upwork platform, but hopefully, I can find some cool AI projects to work on. If you're reading this and you need any AI or software-related work done, you can click here " +
+        "to waive the client fee on Upwork. (Upwork link) I can do pretty much anything, and if I don't know it, I'll learn it.\n" +
+        "<br>" +
+        "<br>" +
+        "Lately, I've been feeling restlessly excited with anticipation. Our baby girl is likely going to be born this week. I have a strange feeling it'll be on election night, " +
+        "so I have something to actually look forward to. My wonderful wife is definitely ready to not be pregnant anymore. I couldn't imagine getting kicked under the ribs from " +
+        "the inside. I expect this week to be rather eventful. -Daniel",
+        imageUrl: "images/blog-image-5.jpg"
+    },
     // {
-    //     title: "The Future of AI",
-    //     date: "2024-11-03",
-    //     summary: "A look into the future of AI",
-    //     content: "The future of AI is exciting. We are on the cusp of a new era of intelligence that will change the world as we know it.",
-    //     imageUrl: "images/blog-image-5.jpg"
+    //     title: "The Future of Consciousness",
+    //     date: "2024-11-10",
+    //     summary: "Thoughts on consciousness, project updates, and life changes ahead",
+    //     content: "",
+    //     imageUrl: ""
     // }
 ];
+
 
 function createBlogPost(post) {
     const article = document.createElement('article');

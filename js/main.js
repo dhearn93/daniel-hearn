@@ -14,15 +14,31 @@ document.addEventListener('DOMContentLoaded', () => {
         updateButtonIcon();
     }
 
-    // Check for saved theme preference or default to light theme
-    const savedTheme = localStorage.getItem('theme');
-    setTheme(savedTheme === 'dark');
-
     // Update button icon based on current theme
     function updateButtonIcon() {
         themeToggle.innerHTML = body.classList.contains('dark-mode') 
             ? '<i class="fas fa-sun"></i>' 
             : '<i class="fas fa-moon"></i>';
+    }
+
+    // Check for system color scheme preference
+    function getSystemThemePreference() {
+        return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    }
+
+    // Set up system theme preference listener
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (!localStorage.getItem('theme')) {
+            setTheme(e.matches);
+        }
+    });
+
+    // Check for saved theme preference or use system preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        setTheme(savedTheme === 'dark');
+    } else {
+        setTheme(getSystemThemePreference());
     }
 
     // Toggle theme when button is clicked
