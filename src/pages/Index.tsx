@@ -35,7 +35,9 @@ const Index = () => {
               Hello
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              I'm Daniel. I'm a father, husband, start-up founder, computer whisperer, philosopher, accelerationist, and professional daydreamer.
+              I'm Daniel.
+              <br />
+              I'm a father, husband, start-up founder, computer whisperer, philosopher, accelerationist, and professional daydreamer.
             </p>
             <div className="flex justify-center md:justify-start gap-4">
               <button 
@@ -81,7 +83,7 @@ const Index = () => {
             </div>
             <div className="glass p-8 rounded-2xl shadow-lg bg-opacity-80 absolute bottom-[-8rem] right-[30px] max-w-xl">
               <p className="text-lg leading-relaxed">
-                I'm a math hobbyist with a deep passion for technology. I've been programming since I was 12 years old and I've been obsessed with AI since I read Robert Heinlein's "The Moon is a Harsh Mistress" at age 15. I love building things, and I've been working on the Conscious Effort project for the past two years. I have dedicated my life to making machines conscious.
+                I'm a math hobbyist with a profound passion for technology. I've been programming since I was 12 years old and I've been obsessed with AI since I read Robert Heinlein's "The Moon is a Harsh Mistress" at age 15. I love building things, and I've been working on the Conscious Effort project for the past two years. I have dedicated my life to machine consciousness.
               </p>
             </div>
           </div>
