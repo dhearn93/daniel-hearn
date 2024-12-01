@@ -1,7 +1,7 @@
 import { Github, Mail, Twitter, X } from "lucide-react";
 const Contact = () => {
   return (
-    <section className="py-16 bg-muted/30">
+    <section id="contact-section" className="py-16 bg-muted/30">
       <div className="container">
         <h2 className="text-3xl font-bold mb-8 text-center">Get in Touch</h2>
         <div className="max-w-2xl mx-auto text-center">

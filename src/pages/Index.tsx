@@ -1,10 +1,17 @@
 import Navbar from "@/components/Navbar";
 import Contact from '../components/Contact';
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { cn } from "@/lib/utils";
 
 const Index = () => {
   const [mainImageLoaded, setMainImageLoaded] = useState(false);
+
+  const scrollToSection = useCallback((elementId: string) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
 
   return (
     <div className="min-h-screen">
@@ -31,12 +38,18 @@ const Index = () => {
               I'm Daniel. I'm a father, husband, start-up founder, computer whisperer, philosopher, accelerationist, and professional daydreamer.
             </p>
             <div className="flex justify-center md:justify-start gap-4">
-              <a href="#contact" className="bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
+              <button 
+                onClick={() => scrollToSection('contact-section')}
+                className="bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
+              >
                 Contact Me
-              </a>
-              <a href="#about" className="bg-secondary text-secondary-foreground px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
+              </button>
+              <button 
+                onClick={() => scrollToSection('about-section')}
+                className="bg-secondary text-secondary-foreground px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
+              >
                 Learn More
-              </a>
+              </button>
             </div>
           </div>
           <div className="hidden md:block relative">
@@ -55,7 +68,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20">
+      <section id="about-section" className="py-20">
         <div className="container">
           <h2 className="text-3xl font-bold mb-12 text-center">About Me</h2>
           <div className="relative">
@@ -77,7 +90,9 @@ const Index = () => {
 
       {/* Contact Section */}
       <div className="mt-16">
-        <Contact />
+        <section id="contact-section">
+          <Contact />
+        </section>
       </div>
     </div>
   );
