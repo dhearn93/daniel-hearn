@@ -18,7 +18,7 @@ const Navbar = () => {
 
   useEffect(() => {
     if (isDark) {
-      document.documentElement.classList.add("dark");
+      document.documentElement.classList.add("dark");        
       localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
@@ -51,37 +51,42 @@ const Navbar = () => {
 
   return (
     <nav className={cn(
-      "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/50 backdrop-blur-sm",
+      "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/50 backdrop-blur-sm h-16",
       isScrolled ? "py-2" : "py-4"
     )}>
-      <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 px-4">
-        <Link to="/" className="flex items-center gap-2">
-          <div className="relative w-32 h-14">
-            {!logoLoaded && (
-              <div className="absolute inset-0 bg-muted animate-pulse rounded-full" />
-            )}
-            <img 
-              src={isDark 
-                ? "/images/logo-dark.jpg"
-                : "/images/logo-light.jpg"
-              }
-              alt="Daniel Hearn"
-              className={cn(
-                "w-32 h-14 rounded-full object-cover transition-opacity duration-300",
-                !logoLoaded && "opacity-0"
-              )}
-              onLoad={() => setLogoLoaded(true)}
-            />
+      <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-0 sm:gap-4 px-4">
+        <div className="w-full sm:w-auto flex flex-col sm:flex-row items-center sm:items-start gap-0 sm:gap-2">
+          <div className="flex items-center justify-between w-full sm:w-auto bg-background/50 backdrop-blur-sm sm:bg-transparent px-4 sm:px-0 rounded-lg sm:rounded-none">
+            <div className="sm:hidden w-10" />
+            <Link to="/" className="flex items-center gap-2">
+              <div className="relative w-24 sm:w-32 h-12 sm:h-14">
+                {!logoLoaded && (
+                  <div className="absolute inset-0 bg-muted animate-pulse rounded-full" />
+                )}
+                <img 
+                  src={isDark ? "/images/logo-dark.jpg" : "/images/logo-light.jpg"}
+                  alt="Daniel Hearn"
+                  className={cn(
+                    "w-full h-full rounded-full object-cover transition-opacity duration-300",
+                    !logoLoaded && "opacity-0"
+                  )}
+                  onLoad={() => setLogoLoaded(true)}
+                />
+              </div>
+            </Link>
+            <button onClick={toggleTheme} className="p-2 hover:bg-secondary rounded-full transition-colors sm:hidden">
+              {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            </button>
           </div>
-        </Link>
-        
-        <div className="flex items-center gap-6">
-          <Link to="/" className="hover:text-primary transition-colors">Home</Link>
-          <Link to="/projects" className="hover:text-primary transition-colors">Projects</Link>
-          <Link to="/blog" className="hover:text-primary transition-colors">Blog</Link>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center justify-center gap-4 sm:gap-6 overflow-x-auto py-2 sm:py-0 bg-background/50 backdrop-blur-sm w-full sm:w-auto px-4 sm:px-0 rounded-lg sm:rounded-none sm:bg-transparent mt-0">
+          <Link to="/" className="hover:text-primary transition-colors whitespace-nowrap">Home</Link>
+          <Link to="/projects" className="hover:text-primary transition-colors whitespace-nowrap">Projects</Link>
+          <Link to="/blog" className="hover:text-primary transition-colors whitespace-nowrap">Blog</Link>
+        </div>
+
+        <div className="hidden sm:flex items-center gap-4">
           <a href="https://github.com/dhearn93" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
             <Github className="w-5 h-5" />
           </a>

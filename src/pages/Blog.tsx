@@ -35,8 +35,8 @@ const Blog = () => {
   }
 
   return (
-    <div className="min-h-screen pt-24">
-      <div className="container">
+    <div className="min-h-screen">
+      <div className="container pt-28 sm:pt-24 px-4">
         <h1 className="text-4xl font-bold mb-8">Blog</h1>
         <div className="grid gap-6">
           {blogPosts.map((post) => (
