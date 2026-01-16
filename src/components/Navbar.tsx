@@ -10,7 +10,7 @@ const Navbar = () => {
     if (savedTheme !== null) {
       return savedTheme === "dark";
     }
-    
+
     return window.matchMedia("(prefers-color-scheme: dark)").matches;
   });
   const [isScrolled, setIsScrolled] = useState(false);
@@ -18,7 +18,7 @@ const Navbar = () => {
 
   useEffect(() => {
     if (isDark) {
-      document.documentElement.classList.add("dark");        
+      document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
@@ -31,7 +31,7 @@ const Navbar = () => {
         setIsDark(e.matches);
       }
     };
-    
+
     darkModeQuery.addEventListener("change", handleSystemThemeChange);
     return () => darkModeQuery.removeEventListener("change", handleSystemThemeChange);
   }, [isDark]);
@@ -63,7 +63,7 @@ const Navbar = () => {
                 {!logoLoaded && (
                   <div className="absolute inset-0 bg-muted animate-pulse rounded-full" />
                 )}
-                <img 
+                <img
                   src={isDark ? "/images/logo-dark.jpg" : "/images/logo-light.jpg"}
                   alt="Daniel Hearn"
                   className={cn(
@@ -82,7 +82,7 @@ const Navbar = () => {
 
         <div className="flex items-center justify-center gap-4 sm:gap-6 overflow-x-auto py-2 sm:py-0 bg-background/50 backdrop-blur-sm w-full sm:w-auto px-4 sm:px-0 rounded-lg sm:rounded-none sm:bg-transparent mt-0">
           <Link to="/" className="hover:text-primary transition-colors whitespace-nowrap">Home</Link>
-          <Link to="/projects" className="hover:text-primary transition-colors whitespace-nowrap">Projects</Link>
+          <Link to="/projects" className="hover:text-primary transition-colors whitespace-nowrap">The Conscious Effort Project</Link>
           <Link to="/blog" className="hover:text-primary transition-colors whitespace-nowrap">Blog</Link>
         </div>
 
