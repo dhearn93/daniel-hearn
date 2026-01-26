@@ -7,12 +7,14 @@ import Index from "./pages/Index";
 import Blog from "./pages/Blog";
 import Projects from "./pages/Projects";
 import Navbar from "./components/Navbar";
+import StarryBackground from "./components/StarryBackground";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <StarryBackground />
       <Toaster />
       <Sonner />
       <HashRouter>
