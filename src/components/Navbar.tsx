@@ -56,7 +56,7 @@ const Navbar = () => {
     )}>
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-0 sm:gap-4 px-4">
         <div className="w-full sm:w-auto flex flex-col sm:flex-row items-center sm:items-start gap-0 sm:gap-2">
-          <div className="flex items-center justify-between w-full sm:w-auto bg-background/50 backdrop-blur-sm sm:bg-transparent px-4 sm:px-0 rounded-lg sm:rounded-none">
+          <div className="flex items-center justify-between w-full sm:w-auto px-4 sm:px-0">
             <div className="sm:hidden w-10" />
             <Link to="/" className="flex items-center gap-2">
               <div className="relative w-24 sm:w-32 h-12 sm:h-14">
@@ -80,7 +80,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center gap-4 sm:gap-6 overflow-x-auto py-2 sm:py-0 bg-background/50 backdrop-blur-sm w-full sm:w-auto px-4 sm:px-0 rounded-lg sm:rounded-none sm:bg-transparent mt-0">
+        <div className="flex items-center justify-center gap-4 sm:gap-6 overflow-x-auto py-2 sm:py-0 w-full sm:w-auto px-4 sm:px-0 mt-0">
           <Link to="/" className="hover:text-primary transition-colors whitespace-nowrap">Home</Link>
           <Link to="/projects" className="hover:text-primary transition-colors whitespace-nowrap">The Conscious Effort Project</Link>
           <Link to="/blog" className="hover:text-primary transition-colors whitespace-nowrap">Blog</Link>
