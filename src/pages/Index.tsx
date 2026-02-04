@@ -75,11 +75,28 @@ const Index = () => {
           <h2 className="text-3xl font-bold mb-12 text-center">About Me</h2>
           <div className="relative">
             <div className="w-full max-w-4xl mx-auto">
-              <img 
-                src="/images/the-stars.png"
-                alt="Daniel Hearn Working"
-                className="w-full aspect-[16/9] object-cover rounded-2xl shadow-xl"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcSet="/images/the-stars-800.avif 800w, /images/the-stars-1600.avif 1600w"
+                  sizes="(max-width: 1024px) 100vw, 896px"
+                />
+                <source
+                  type="image/jpeg"
+                  srcSet="/images/the-stars-800.jpg 800w, /images/the-stars-1600.jpg 1600w"
+                  sizes="(max-width: 1024px) 100vw, 896px"
+                />
+                <img 
+                  src="/images/the-stars-1600.jpg"
+                  alt="Daniel Hearn Working"
+                  className="w-full aspect-[16/9] object-cover rounded-2xl shadow-xl"
+                  width={1600}
+                  height={1200}
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="low"
+                />
+              </picture>
             </div>
             <div className="glass p-6 sm:p-8 rounded-2xl shadow-lg bg-opacity-80 
                           relative sm:absolute sm:bottom-[-8rem] sm:right-[30px] 
